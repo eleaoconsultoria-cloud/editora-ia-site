@@ -1,183 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Editora IA — Projeto de inteligência editorial orientado por dados e inteligência artificial.">
-  <title>Editora IA | Inteligência Editorial</title>
-
-  <style>
-    :root {
-      --fundo: #0b1020;
-      --cartao: #151e35;
-      --texto: #f5f7ff;
-      --secundario: #aab7d0;
-      --destaque: #65e2c2;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--fundo);
-      color: var(--texto);
-      line-height: 1.7;
-    }
-
-    header {
-      padding: 24px 8%;
-      border-bottom: 1px solid #26334d;
-      font-weight: bold;
-      letter-spacing: 2px;
-      color: var(--destaque);
-    }
-
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 8%;
-    }
-
-    .etiqueta {
-      color: var(--destaque);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-    }
-
-    h1 {
-      font-size: clamp(38px, 6vw, 70px);
-      line-height: 1.15;
-      margin: 18px 0;
-    }
-
-    h2 { font-size: 28px; }
-
-    p {
-      color: var(--secundario);
-      font-size: 17px;
-    }
-
-    .destaque { color: var(--destaque); }
-
-    .introducao {
-      max-width: 750px;
-      font-size: 20px;
-    }
-
-    .grade {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .cartao {
-      background: var(--cartao);
-      border: 1px solid #26334d;
-      border-radius: 14px;
-      padding: 28px;
-    }
-
-    .cartao h3 { color: var(--destaque); }
-
-    section { margin-top: 85px; }
-
-    footer {
-      border-top: 1px solid #26334d;
-      padding: 30px 8%;
-      text-align: center;
-      color: var(--secundario);
-      font-size: 13px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2d">
+  <meta name="description" content="Editora I.A. — inteligência editorial para transformar pesquisa e evidências em conhecimento útil.">
+  <title>Editora I.A. | Conhecimento com propósito</title>
+  <link rel="preload" as="image" href="assets/logo-editora-ia.webp">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>EDITORA IA</header>
+  <a class="atalho" href="#conteudo">Pular para o conteúdo</a>
 
-  <main>
-    <div class="etiqueta">Projeto de Inteligência Editorial</div>
+  <header class="cabecalho">
+    <div class="barra container">
+      <a class="marca" href="#inicio" aria-label="Editora I.A. — início">
+        <img src="assets/logo-editora-ia.webp" alt="Editora I.A., símbolo de livro e rede neural">
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#proposta">Proposta</a>
+        <a href="#etapas">Como funciona</a>
+        <a href="#responsabilidade">Responsabilidade</a>
+      </nav>
+      <a class="botao botao-contorno" href="#projeto">Conheça o projeto <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
 
-    <h1>
-      Transformando dados em
-      <span class="destaque">conhecimento.</span>
-    </h1>
+  <main id="conteudo">
+    <section class="hero container" id="inicio" aria-labelledby="titulo-principal">
+      <div class="hero-texto">
+        <p class="sobretitulo"><span class="ponto"></span> Inteligência editorial orientada por dados</p>
+        <h1 id="titulo-principal">Pesquisa que encontra sentido. <span>Conhecimento que abre caminhos.</span></h1>
+        <p class="hero-resumo">A Editora I.A. é um projeto em desenvolvimento para identificar necessidades reais de informação e apoiar a criação de conteúdos úteis, bem pesquisados e fundamentados em evidências.</p>
+        <div class="hero-acoes">
+          <a class="botao botao-destaque" href="#proposta">Entenda a proposta <span aria-hidden="true">↓</span></a>
+          <span class="nota-projeto"><span class="status-indicador"></span> Projeto em desenvolvimento</span>
+        </div>
+      </div>
 
-    <p class="introducao">
-      A Editora IA é um projeto em desenvolvimento que
-      combina inteligência artificial, análise de tendências
-      e pesquisa orientada por dados para identificar
-      oportunidades de produção de conteúdo editorial.
-    </p>
-
-    <section>
-      <h2>Nossa proposta</h2>
-      <p>
-        Desenvolver um ecossistema tecnológico capaz de
-        identificar necessidades de informação, compreender
-        interesses do público e apoiar a criação de conteúdos
-        relevantes, úteis e fundamentados em evidências.
-      </p>
+      <div class="hero-visual" aria-label="Ilustração conceitual do processo editorial">
+        <div class="orb orb-um"></div><div class="orb orb-dois"></div>
+        <div class="grade-pontos" aria-hidden="true"></div>
+        <div class="painel-pesquisa">
+          <div class="painel-cabecalho"><span class="mini-simbolo">E</span><span>Pesquisa editorial</span><span class="sinal">●</span></div>
+          <div class="linha-dado"><span class="linha-icone">⌕</span><div><strong>Necessidades reais</strong><small>Perguntas e temas recorrentes</small></div><span class="check">✓</span></div>
+          <div class="linha-dado"><span class="linha-icone">⌁</span><div><strong>Evidências confiáveis</strong><small>Fontes e contexto documentados</small></div><span class="check">✓</span></div>
+          <div class="linha-dado"><span class="linha-icone">✳</span><div><strong>Conhecimento útil</strong><small>Pesquisa que orienta conteúdo</small></div><span class="check">✓</span></div>
+          <div class="painel-rodape"><span>Da investigação à ideia</span><span class="trilha"><i></i><i></i><i></i></span></div>
+        </div>
+        <div class="selo"><span>IDEIAS</span><b>+</b><span>EVIDÊNCIAS</span></div>
+      </div>
+      <div class="hero-linha" aria-hidden="true"><span>01</span><span class="linha-fina"></span><span>Conhecimento com propósito</span></div>
     </section>
 
-    <section>
-      <h2>Áreas de atuação</h2>
-
-      <div class="grade">
-        <div class="cartao">
-          <h3>Inteligência de tendências</h3>
-          <p>
-            Monitoramento de tendências de pesquisa e
-            identificação de assuntos emergentes.
-          </p>
+    <section class="manifesto faixa" id="proposta" aria-labelledby="titulo-proposta">
+      <div class="container manifesto-grade">
+        <div>
+          <p class="sobretitulo escuro">A proposta</p>
+          <h2 id="titulo-proposta">Conteúdo começa com uma boa pergunta.</h2>
         </div>
-
-        <div class="cartao">
-          <h3>Análise de necessidades</h3>
-          <p>
-            Investigação de dúvidas, interesses e
-            necessidades recorrentes dos públicos.
-          </p>
-        </div>
-
-        <div class="cartao">
-          <h3>Inteligência artificial</h3>
-          <p>
-            Desenvolvimento de agentes especializados para
-            apoiar processos de pesquisa e produção editorial.
-          </p>
-        </div>
-
-        <div class="cartao">
-          <h3>Produção de conhecimento</h3>
-          <p>
-            Transformação de informações em oportunidades
-            para conteúdos e publicações digitais.
-          </p>
+        <div class="manifesto-corpo">
+          <p>Nosso objetivo é desenvolver um ecossistema que observe sinais, investigue dúvidas recorrentes e organize evidências para reconhecer oportunidades editoriais.</p>
+          <p>Assim, a produção de conteúdo pode partir de necessidades concretas do público — com pesquisa, contexto e responsabilidade em cada etapa.</p>
+          <a class="link-seta" href="#etapas">Veja as etapas do projeto <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Pesquisa e responsabilidade</h2>
-      <p>
-        O projeto busca utilizar fontes de dados públicas
-        e integrações autorizadas, respeitando as condições
-        de acesso, a privacidade e as limitações técnicas
-        das plataformas consultadas.
-      </p>
-      <p>
-        A Editora IA encontra-se em fase de desenvolvimento.
-        As funcionalidades descritas representam objetivos
-        do projeto e não serviços atualmente disponíveis.
-      </p>
+    <section class="container secao" id="etapas" aria-labelledby="titulo-etapas">
+      <div class="secao-topo">
+        <div><p class="sobretitulo">Um ecossistema em construção</p><h2 id="titulo-etapas">Da informação ao conhecimento</h2></div>
+        <p class="secao-intro">Agentes especializados apoiam etapas diferentes de um fluxo editorial integrado.</p>
+      </div>
+      <div class="etapas">
+        <article class="etapa">
+          <span class="etapa-numero">01 <span>／</span> PESQUISAR</span>
+          <div class="etapa-icone" aria-hidden="true">⌕</div>
+          <h3>Observar sinais</h3>
+          <p>Mapear tendências, perguntas e necessidades expressas em fontes públicas e autorizadas.</p>
+          <span class="etapa-linha"></span>
+        </article>
+        <article class="etapa">
+          <span class="etapa-numero">02 <span>／</span> COMPREENDER</span>
+          <div class="etapa-icone" aria-hidden="true">◉</div>
+          <h3>Investigar evidências</h3>
+          <p>Reunir contexto e referências para avaliar a relevância e a consistência dos temas.</p>
+          <span class="etapa-linha"></span>
+        </article>
+        <article class="etapa">
+          <span class="etapa-numero">03 <span>／</span> ORGANIZAR</span>
+          <div class="etapa-icone" aria-hidden="true">⌘</div>
+          <h3>Estruturar ideias</h3>
+          <p>Transformar achados em uma base organizada que ajude a orientar decisões editoriais.</p>
+          <span class="etapa-linha"></span>
+        </article>
+        <article class="etapa">
+          <span class="etapa-numero">04 <span>／</span> PRODUZIR</span>
+          <div class="etapa-icone" aria-hidden="true">✧</div>
+          <h3>Apoiar conteúdo</h3>
+          <p>Dar suporte à criação de materiais claros, úteis e conectados às necessidades identificadas.</p>
+          <span class="etapa-linha"></span>
+        </article>
+      </div>
+    </section>
+
+    <section class="compromisso" id="responsabilidade" aria-labelledby="titulo-compromisso">
+      <div class="container compromisso-grade">
+        <div class="compromisso-sinal" aria-hidden="true"><span>EI</span><i></i><i></i><i></i></div>
+        <div>
+          <p class="sobretitulo">Critério em cada etapa</p>
+          <h2 id="titulo-compromisso">Tecnologia com responsabilidade editorial.</h2>
+          <p class="compromisso-texto">O projeto prevê o uso de fontes públicas e integrações autorizadas, respeitando condições de acesso, privacidade e limites técnicos. As informações devem manter vínculo com suas fontes e contexto.</p>
+        </div>
+        <div class="compromissos">
+          <div><span>01</span><p>Fontes e evidências rastreáveis</p></div>
+          <div><span>02</span><p>Respeito às regras de acesso</p></div>
+          <div><span>03</span><p>Clareza sobre o que está em desenvolvimento</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container fechamento" id="projeto">
+      <p class="sobretitulo">Editora I.A.</p>
+      <h2>Uma ideia em construção, guiada por perguntas que importam.</h2>
+      <p>Estamos desenvolvendo as bases de um processo editorial apoiado por pesquisa, dados e tecnologia.</p>
+      <span class="estado"><span class="status-indicador"></span> Acompanhe a evolução do projeto</span>
     </section>
   </main>
 
-  <footer>
-    © 2026 Editora IA — Projeto de Inteligência Editorial.
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <a class="rodape-marca" href="#inicio">EDITORA <span>I.A.</span></a>
+      <p>Projeto de inteligência editorial · 2026</p>
+      <a href="#inicio" class="voltar">Voltar ao início ↑</a>
+    </div>
+    <div class="container aviso">As funcionalidades apresentadas são objetivos do projeto e ainda não representam serviços disponíveis.</div>
   </footer>
 </body>
 </html>
